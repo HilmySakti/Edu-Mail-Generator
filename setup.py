@@ -29,7 +29,7 @@ def main():
         setup_Firefox(firefox_ver)
     else:
         is_firefox_there = 0
-        print('Firefox isn\'t installed')
+        print('Firefoxmu belum terinstal')
     
     print('\nChrome')
     chrome_ver = get_chrome_version()
@@ -41,13 +41,13 @@ def main():
         setup_Chrome(chrome_ver)
     else:
         is_chrome_there = 0
-        print('Chrome isn\'t installed')
+        print('Chrome mu tidak bisa terinstal')
     
     if is_firefox_there == 0 and is_chrome_there == 0:
-        print('Error - Setup installation failed \nReason - Please install either Chrome or Firefox browser to complete setup process')
+        print('Error - Setup Install Gagal \nAlasan - Instal Google Chrome Atau FireFox Terlebih dahulu agar work')
         exit()
 
-    print('\nWich browser do you prefer to run script on')
+    print('\nBrowser mana yang mau kamu install script')
 
     for index, pr in enumerate(installed_pr, start=1):
         print('\n[*] ' + str(index) + ' ' + pr)
